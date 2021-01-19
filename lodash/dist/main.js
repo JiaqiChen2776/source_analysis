@@ -1,0 +1,1 @@
+(()=>{"use strict";var o={107:o=>{o.exports={Pi:3.141596}}},r={};function t(e){if(r[e])return r[e].exports;var s=r[e]={exports:{}};return o[e](s,s.exports,t),s.exports}(()=>{const o=t(107);console.log("1a");let r=2*o.Pi*5;console.log("round:",r)})()})();

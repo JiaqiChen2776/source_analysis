@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    // 指定ES目标版本
+    "target": "esnext",
+    
+    "moduleResolution": "node",
+    "allowJs": true,
+    "strict": true,
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "source"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
