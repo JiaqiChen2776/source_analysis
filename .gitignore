@@ -1,1 +1,4 @@
+# 过滤 node_modules 目录
 node_modules/
+# 过滤 zip 文件
+*.zip
