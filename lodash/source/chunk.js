@@ -43,9 +43,3 @@ resetArr()
 let st = Date.now()
 let chunkResult = chunk(chunkArr, chunkSize)
 console.log(chunkResult, Date.now() - st)
-
-
-
-
-
-
