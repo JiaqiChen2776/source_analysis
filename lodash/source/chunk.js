@@ -1,17 +1,8 @@
-
-
+import { resetArr } from '../utils/setData.js'
+import { start, end } from '../utils/detectSpeed.js'
 
 let chunkArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 let chunkSize = 3
-
-// 造数据
-let total = 1000000
-function resetArr() {
-  chunkArr = []
-  for (let i = 1; i <= total; i++) {
-    chunkArr.push(i)
-  }
-}
 
 // slice 浅拷贝
 function chunk1(arr, size) {
@@ -38,7 +29,8 @@ function chunk2(arr, size) {
   return result
 }
 
-resetArr()
-let st = Date.now()
-let chunkResult = chunk(chunkArr, chunkSize)
-console.log(chunkResult, Date.now() - st)
+chunkArr = resetArr(chunkArr, 1000000)
+start()
+let chunkResult = chunk2(chunkArr, chunkSize)
+console.log(chunkResult)
+end()

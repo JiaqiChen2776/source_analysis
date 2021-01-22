@@ -2,3 +2,5 @@
 node_modules/
 # 过滤 zip 文件
 *.zip
+# 过滤 lodash/*.html 文件
+lodash/*.html
