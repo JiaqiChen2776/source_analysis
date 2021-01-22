@@ -115,3 +115,22 @@ console.log(toInteger([]), Number([]))
 console.log(toInteger([1, 2, 3]), Number([1, 2, 3]))
 console.log(toInteger({}), Number({}))
 console.log(toInteger({ a: 1 }), Number({ a: 1 }))
+
+
+
+
+function copyArray(source, array) {
+  var index = -1,
+      length = source.length;
+
+  array || (array = Array(length));
+  while (++index < length) {
+    array[index] = source[index];
+  }
+  return array;
+}
+let s = [1, 2, 3, [4, 5, 6]]
+let r = copyArray(s)
+s[3][0] = 9
+console.log(s, r)
+
