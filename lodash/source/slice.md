@@ -1,4 +1,7 @@
-# slice 源码
+# slice
+裁剪数组，从`start`到`end`，但不包括`end`
+
+## 源码
 ```javascript
 function slice(array, start, end) {
   // 校验数组及其长度

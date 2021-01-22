@@ -20,7 +20,6 @@ function chunk1(arr, size) {
   let result = []
   for (let i = 0; i < newSize; i++) {
     let item = arr.slice(i * size, i * size + size)
-    // 此处是浅拷贝，若是对象数组，则可使用 JSON.stringfy 及 JSON.parse 进行深拷贝；
     result.push(item)
   }
   return result

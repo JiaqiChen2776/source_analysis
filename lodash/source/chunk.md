@@ -1,4 +1,7 @@
-# chunck 源码
+# chunck
+将数组拆分成多个等长的区块
+
+## 源码
 ```javascript
 import slice from './slice.js'
 import toInteger from './toInteger.js'
