@@ -1,7 +1,7 @@
 function concat(arr, ...vals) {
   if (arr ==  null && !vals.length) return arr
 
-  let result = arr
+  let result = Array.isArray(arr) ? arr : [arr]
   vals.forEach(i => {
     if (i instanceof Array) {
       i.forEach(j => {
